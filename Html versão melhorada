@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro e Login</title>
+    <link rel="stylesheet" href="style.css"> <!-- Corrigido o erro de digitação -->
+</head>
+<body>
+    <div class="container">
+        <h1>Faça seu Cadastro ou Login</h1>
+
+        <!-- Formulário de Cadastro -->
+        <form action="/cadastro" method="POST">
+            <h2>Usuário</h2>
+            <input type="text" name="usuario" placeholder="Digite seu nome de usuário" required>
+            
+            <h2>Senha</h2>
+            <input type="password" name="senha" placeholder="Digite sua senha" required>
+
+            <button type="submit">Cadastrar</button> <!-- Botão para enviar cadastro -->
+        </form>
+
+        <p>Já tem uma conta? <a href="#login">Faça Login</a></p>
+
+        <!-- Formulário de Login (opcional, para alternar entre cadastro e login) -->
+        <form action="/login" method="POST" id="login">
+            <h2>Login</h2>
+            <input type="text" name="usuario" placeholder="Digite seu nome de usuário" required>
+            
+            <h2>Senha</h2>
+            <input type="password" name="senha" placeholder="Digite sua senha" required>
+
+            <button type="submit">Entrar</button> <!-- Botão para enviar login -->
+        </form>
+    </div>
+</body>
+</html>
